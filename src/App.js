@@ -2,16 +2,19 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./views/home/Home";
+import About from "./views/about/About";
+import notFound from "./views/notFound/NotFound";
 
 function App() {
   return (
-    <div>
+    <>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
 
-        <Route path="*" component={() => <h1>404 Not Found</h1>} />
+        <Route path="*" component={notFound} />
       </Switch>
-    </div>
+    </>
   );
 }
 
