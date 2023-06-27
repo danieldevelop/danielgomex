@@ -1,14 +1,20 @@
 import React from "react";
 
-import Navbar from "../../components/nabvar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
+import Banner from "../banner/Banner";
+
 
 const Home = () => {
     return (
-        <div>
+        <>
             <header>
                 <Navbar />
             </header>
-        </div>
+
+            <main style={{"paddingTop": "5rem"}}>
+                <Banner />
+            </main>
+        </>
     )
 }
 
